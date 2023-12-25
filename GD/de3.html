@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #0033CC;
+        }
+        .header .img img{
+            height: 60px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .hd-menu {
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+        .hd-menu .hd-left {
+            display: flex;
+            margin-left: 10px;
+        }
+        .hd-menu .hd-left-ul{
+            display: flex;
+            list-style: none;
+        }
+        .hd-left-ul li {
+            padding: 5px;
+            color: white;
+            margin-left: 10px;
+        }
+        .hd-right {
+            display: flex;
+        }
+        .hd-right img{
+            height: 20px;
+            width: 30px;
+        }
+        .search {
+            display: flex;
+            align-items: center;
+        }
+        .search input{
+            margin-right: 10px;
+            border-radius: 5px;
+            padding: 2px;
+            border: hidden;
+        }
+
+        .menu {
+            margin-top: 10px;
+            border: 1px solid black;
+            width: 250px;
+            background-color: #668bfb;
+            height: 233px;
+        }
+        
+        .sub-menu li {
+            padding: 10px;
+            border-bottom: 1px solid white;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .cha {
+            position: relative;
+        }
+        .con {
+            position: absolute;
+            display: flex;
+            list-style: none;
+            display: none;
+        }
+        .con li {
+            border: none;
+        }
+        .cha:hover .con {
+            display: flex;
+            flex-direction: column;
+            top:0;
+            left: 250px;
+            width: 150px;
+            background-color: #668bfb;
+            color: white;
+        }
+        .con li {
+            border-bottom: 1px solid white;
+        }
+
+        .main {
+            display: flex;
+        }
+        .content {
+            margin-top: 10px; 
+            margin-left: 10px;
+            width: 80%;
+        }
+        .hd-content {
+            border-bottom: 1px solid blue;
+            width: 100%;
+            margin-left: 20px;
+
+        }
+        .main {
+            display: flex;
+        }
+        .main-content {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .mc {
+            border: 1px solid black;
+            width: 25%;
+            padding: 10px;
+            text-align: center;
+            margin-left: 20px;
+        }
+        .mc img {
+            width: 100%;
+        }
+        .top {
+            display: flex;
+        }
+        .bottom {
+            margin-top: 20px;
+            display: flex;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+
+        <div class="header">
+            <div class="img">
+                <img src="Screenshot 2023-07-28 152950.png" alt="">
+            </div>
+            <div class="hd-menu">
+                <div class="hd-left">
+                    <ul class="hd-left-ul">
+                        <li>Trang chủ</li>
+                        <li> Sản phẩm</li>
+                        <li>Giới thiệu</li>
+                        <li>Tin tức</li>
+                        <li>Liên hệ</li>
+                    </ul>
+                </div>
+                <div class="hd-right">
+                    <img src="Screenshot 2023-07-28 152950.png" alt="" style="margin-right: 5px;">
+                    <img src="Screenshot 2023-07-28 152950.png" alt="">
+                </div>
+                <div class="search">
+                    <input type="search" name="" id="" placeholder="Nhập từ khóa tìm kiếm">
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main">
+            <div class="menu">
+                <h2 style="background-color: #0033CC; color: white; padding: 5px;">THEO ỨNG DỤNG</h2>
+                <ul class="sub-menu">
+                    <li><a href="">NL Ngành thức ăn chăn nuôi</a></li>
+                    <li><a href="">NL Ngành thức ăn chăn nuôi</a></li>
+                    <li><a href="">NL Ngành thức ăn chăn nuôi</a></li>
+                    <li><a href="">NL Ngành thức ăn chăn nuôi</a></li>
+                    <li class="cha"><a href="">NL Ngành thức ăn chăn nuôi</a>
+                        <ul class="con">
+                            <li><a href="#"></a>NL ngành kính</li>
+                            <li><a href="#"></a>NL luyện kim</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="content">
+                <div class="hd-content">
+                    SẢN PHẨM CÙNG LOẠI
+                </div>
+
+
+                <div class="main-content">
+                    <div class="top">
+                        <div class="mc">
+                            <img src="Screenshot 2023-07-28 152950.png" alt="">
+                            <p>Hạt silic - loại 2</p>
+                        </div>
+
+                        <div class="mc">
+                            <img src="Screenshot 2023-07-28 152950.png" alt="">
+                            <p>Hạt silic - loại 2</p>
+                        </div>
+
+                        <div class="mc">
+                            <img src="Screenshot 2023-07-28 152950.png" alt="">
+                            <p>Hạt silic - loại 2</p>
+                        </div>
+
+                        <div class="mc">
+                            <img src="Screenshot 2023-07-28 152950.png" alt="">
+                            <p>Hạt silic - loại 2</p>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="mc">
+                            <img src="Screenshot 2023-07-28 152950.png" alt="">
+                            <p>Hạt silic - loại 2</p>
+                        </div>
+
+                        <div class="mc">
+                            <img src="Screenshot 2023-07-28 152950.png" alt="">
+                            <p>Hạt silic - loại 2</p>
+                        </div>
+
+                        <div class="mc">
+                            <img src="Screenshot 2023-07-28 152950.png" alt="">
+                            <p>Hạt silic - loại 2</p>
+                        </div>
+
+                        <div class="mc">
+                            <img src="Screenshot 2023-07-28 152950.png" alt="">
+                            <p>Hạt silic - loại 2</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

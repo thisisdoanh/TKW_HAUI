@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background-image: url(Screenshot\ 2023-07-28\ 152950.png);
+            height: 60px;
+            display: flex;
+        }
+        .header img {
+            width: 120px;
+            height: 60px;
+        }
+        .hd_menu {
+            display: flex;
+            align-items: center;
+            background-color: #33CCFF;
+            justify-content: space-between;
+
+        }
+        .hd_menu ul {
+            display: flex;
+            list-style: none;
+        }
+        .hd_menu ul li {
+            padding: 10px;
+            border-right: 1px solid white;
+            color: white;
+        }
+        .hd_menu li:hover {
+            color: yellow;
+            background-color: green;
+        }
+        .hd_menu img {
+            width: 30px;
+            height: 20px;
+            margin-left: 5px;
+        }
+        input {
+            border: hidden;
+        }
+        .search {
+            padding: 3px;
+            background-color: #fff;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .main {
+            margin-top: 10px;
+            display: flex;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            background-color: #33FFFF;
+            color: rgb(255, 255, 255);
+            list-style: none;
+            height: 275px;
+            margin-top: 10px;
+        }
+        .menu li {
+            padding: 7px;
+            border-bottom: 1px dotted white;
+        }
+        .menu li:hover {
+            color: yellow;
+        }
+        .cha {
+            position: relative;
+        }
+        .con {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            width: 200px;
+            background-color: #7fffff;
+            list-style: none;
+            display: none;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        .cha:hover .con {
+            display: block;
+        }
+        .content {
+            width: 90%;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+
+        }
+        .top {
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+        }
+        .ct {
+            width: 25%;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 10px;
+        }
+        .ct img {
+            width: 100%;
+            padding: 5px;
+        }
+        .ct p {
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <img src="Screenshot 2023-07-28 152950.png" alt="">
+            <div style="margin-left: 20%; justify-content:  center; display: flex; flex-direction: column;">
+                <p>Bảo thạch mineral & production company limited</p>
+                <p>Address: But phong village</p>
+            </div>
+        </div>
+        <div class="hd_menu">
+            <ul>
+                <li>TRANG CHỦ</li>
+                <li>SẢN PHẨM</li>
+                <li>GiỚI THIỆU</li>
+                <li>TIN TỨC</li>
+                <li>LIÊN HỆ</li>
+            </ul>
+            <div style="display: flex; align-items: center;">
+                <img style="margin-left: 30px;" src="Screenshot 2023-07-28 152950.png" alt="">
+            <img src="Screenshot 2023-07-28 152950.png" alt="">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Nhập từ khóa tìm kiếm">
+            </div>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <h3 style="background-color: #0066FF;padding: 5px;color: white;">THEO ỨNG DỤNG</h3>
+                <ul>
+                    <li>NL Ngành thức ăn chăn <br>nuôi</li>
+                    <li>NL Ngành thủy hải sản</li>
+                    <li>NL Ngành SX phân bón</li>
+                    <li>Nguyên Vật liệu Xây <br>Dựng</li>
+                    <li class="cha">Các ngành khác
+                        <ul class="con">
+                            <li><a href="">NL ngành kính</a></li>
+                            <li><a href="">NL ngành luyện kim</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <div style="border-bottom: 1px solid #0066FF; width: 100%;
+               ">
+                    <p style="padding: 10px; background-color: #0066FF; width: 200px; color: white;">SẢN PHẨM CÙNG LOẠI</p>
+                </div>
+
+                <div class="top">
+                    <div style="margin-left: 0;" class="ct">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <p>hạt silic loại 1</p>
+                    </div>
+                    <div class="ct">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <p>hạt silic loại 1</p>
+                    </div>
+                    <div class="ct">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <p>hạt silic loại 1</p>
+                    </div>
+                    <div class="ct">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <p>hạt silic loại 1</p>
+                    </div>
+                </div>
+                <div class="top">
+                    <div style="margin-left: 0;" class="ct">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <p>hạt silic loại 1</p>
+                    </div>
+                    <div class="ct">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <p>hạt silic loại 1</p>
+                    </div>
+                    <div class="ct">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <p>hạt silic loại 1</p>
+                    </div>
+                    <div class="ct">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <p>hạt silic loại 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

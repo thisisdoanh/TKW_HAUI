@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            background-color: #336699;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hd-left {
+            display: flex;
+        }
+
+        .header .hd-left img {
+            width: 80px;
+            height: 50px;
+        }
+
+        .hd-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .search {
+            background-color: white;
+            height: 20px;
+            margin-right: 30px;
+
+        }
+
+        .person {
+            display: flex;
+            border-left: 1px solid rgb(255, 255, 255);
+        }
+
+        .person .p-left {
+            margin-left: 25px;
+            border-right: 1px solid rgb(255, 255, 255);
+        }
+
+        .person .p-left img {
+            margin-right: 15px;
+
+        }
+
+        .person div img {
+            width: 50px;
+            height: 30px;
+            padding: 7px;
+        }
+
+
+        .menu {
+            margin-top: 5px;
+            border: 1px solid black;
+            width: 150px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu .ul {
+            list-style: none;
+        }
+
+        .menu .ul li {
+            border-bottom: 1px solid black;
+            padding: 5px;
+        }
+
+        .cha {
+            position: relative;
+        }
+
+        .con {
+            position: absolute;
+            list-style: none;
+            left: 145px;
+            top: 0;
+            display: none;
+        }
+
+        .cha:hover {
+            background-color: #fbeb09;
+
+        }
+
+        .cha:hover select {
+            background-color: #fbeb09;
+        }
+
+        .cha:hover .con {
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .p-left a:hover {
+            color: red;
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+        }
+
+        .menu {
+            position: relative;
+            display: flex;
+            width: 150px;
+            height: 370px;
+        }
+
+        .content {
+            margin-top: 5px;
+            display: flex;
+            width: 80%;
+            flex-direction: column;
+            margin-left: 100px;
+        }
+
+        .top {
+            display: flex;
+        }
+
+        .bottom {
+            display: flex;
+        }
+
+        .ct-top {
+            width: 45%;
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        .ct-top img {
+            position: relative;
+            align-items: center;
+            width: 200px;
+            height: 400px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- transform:rotate(-90deg) -->
+    <div class="Container">
+        <div class="header">
+            <div class="hd-left">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="hd-right">
+                <div class="search">
+                    All Categories <select name="" id="" style="border: hidden; "></select>
+                    <input type="search" name="" id="" style="border: hidden; " placeholder="Search For Products">
+                    <button style="background-color: black; padding: 1px; color: white;">Search</button>
+                </div>
+                <div class="person">
+                    <div class="p-left" style="display: flex; align-items: center;">
+                        <a href="">Cart</a>
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <img src="Screenshot 2023-07-28 152950.png" alt=""
+                            style="border-radius: 50%; width: 35px;height: 35px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <p style="background-color: #336699; padding: 5px; color: white; ">ALL CATEGORY</p>
+                <ul class="ul">
+                    <li>Home</li>
+                    <li>Blog</li>
+                    <li class="cha">Laptops
+                        <select name="" id=""
+                            style="border: hidden; transform:rotate(-90deg); font-size: 6px; color: rgb(88, 88, 88); margin-left: 30px; "></select>
+
+                        <ul class="con">
+                            <li><a href=""><b>Dell(0)</b></a></li>
+                            <li><a href="">Men(0)</a></li>
+                            <li><a href="">Purse(0)</a></li>
+                        </ul>
+                    </li>
+                    <li>Shocks</li>
+                    <li>Cloth</li>
+                    <li>Cosmetic</li>
+                    <li>Desktops
+                        <select name="" id=""
+                            style="border: hidden; transform:rotate(-90deg); font-size: 10px; color: rgb(88, 88, 88); margin-left: 22px;"></select>
+                    </li>
+                    <li>Kids</li>
+                    <li>MP3 Players
+                        <select name="" id=""
+                            style="border: hidden; transform:rotate(-90deg); font-size: 10px; color: rgb(88, 88, 88); "></select>
+                    </li>
+                    <li>Perfume</li>
+                    <li style="border-bottom: none;">MORE</li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="top">
+                    <div class="ct-top">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <div class="text">
+                            <p> 590,000 đ</p>
+                            <p style="font-size: 10px;"> 900,000 đ</p>
+                        </div>
+                    </div>
+
+                    <div class="ct-top">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                    </div>
+                    <div class="ct-top">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <div class="text">
+                            <p> 590,000 đ</p>
+                        </div>
+                    </div>
+                    <div class="ct-top">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <div class="text">
+                            <p> 590,000 đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom" style="margin-bottom: 10px;">
+
+                    <div class="ct-top">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <div class="text">
+                            <p> 590,000 đ</p>
+                        </div>
+                    </div>
+
+                    <div class="ct-top">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <div class="text">
+                            <p> 590,000 đ</p>
+                        </div>
+                    </div>
+                    <div class="ct-top">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <div class="text">
+                            <p> 590,000 đ</p>
+                        </div>
+                    </div>
+                    <div class="ct-top">
+                        <img src="Screenshot 2023-07-28 152950.png" alt="">
+                        <div class="text">
+                            <p> 590,000 đ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
